@@ -1,0 +1,97 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the upload form */
+.container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Page heading */
+.container h2 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Labels styling */
+.container label {
+    font-size: 1rem;
+    color: #666666;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Dropdown and input fields */
+.container select, 
+.container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.container select:focus, 
+.container input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Upload button styling */
+.container button {
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.container button:active {
+    background-color: #003f7f;
+    transform: translateY(0);
+}
+
+/* Success and error messages */
+.container p {
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.container p[style="color: green;"] {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.container p[style="color: red;"] {
+    color: #dc3545;
+    font-weight: bold;
+}
